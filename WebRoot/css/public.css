@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*
+* @Author: 孙梦海
+* @Date:   2016-11-01 20:56:18
+* @Last Modified by:   SMH
+* @Last Modified time: 2016-11-02 19:01:27
+*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666666;		
+}
+
+/*---------------------header头部样式---------------------*/
+header {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 1149px;
+	height: 45px;
+	background-color: #0072C6;
+}
+header a {
+	text-decoration: none;
+}
+header .logo {
+	display: inline-block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 180px;
+	line-height: 45px;
+	font-size: 16px;
+	color: #fff;
+	border-right: 1px solid #0065B0;
+}
+header .logo:after {
+	position: absolute;
+	left: 180px;
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 45px;
+	background-color: #0080DD;
+}
+header ul {
+	float: right;
+	/*由于第一个li没有border-right，最后一个li没有border-left*/
+	border-left: 1px solid #0065B0;
+	border-right: 1px solid #0080DD;
+}
+header ul li{
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	list-style-type: none;
+	border-left: 1px solid #0080DD;
+	border-right: 1px solid #0065B0;
+}
+header ul li a {
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 13px;
+	color: #D9D9D9;
+}
+header ul li a img {
+	float: left;
+	margin: 5px 10px 5px 0;
+	width: 35px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1.5px solid #fff;
+	border-radius: 50%;
+}
+header ul li a span {
+	font-size: 13px;
+	color: #D9D9D9;
+}
+header ul li a span strong {
+	color: inherit;
+}
+header ul li a:hover {
+	height: 43px;
+	background-color: #60bbff;
+    color: #fff;
+}
+/*用户中心*/
+header .user {
+	position: relative;
+}
+header .user:hover .dropDown {
+	display: block;
+}
+header .user:hover a {
+	height: 45px;
+	background-color: #fff;
+}
+header .user:hover a span {
+    color: #000;
+}
+header .user .dropDown {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 45px;
+	left: -1px;
+	width: 100%;
+	border-left: 1px solid #EEE;
+	border-right: 1px solid #EEE;
+	background-color: #FFF;
+}
+header .user .dropDown a {
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #0072C6;
+	border-bottom: 1px solid #EEE;
+}
+header .user .dropDown a:hover {
+	background-color: #f9f9f9;
+    color: #0072c6;
+}
+
+/*---------------------leftBar左侧导航栏样式---------------------*/
+.leftBar {
+	position: fixed;
+	z-index: 999;
+	top: 45px;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 200px;
+	height: 100%;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	border-right: 1px solid #ccc;
+	background-color: #EEEEEE
+}
+.leftBar ul li {
+	position: relative;
+	width: 100%;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid #F9F9F9;
+	border-bottom: 1px solid #CCCCCC;
+}
+.leftBar ul li .fa {
+	margin: 0 20px 0 10px;
+}
+.leftBar ul li:first-child {
+	border-top: none;
+	background-color: #F5F5F5; 
+}
+.leftBar ul li:last-child {
+	/* border-bottom: none; */
+}
+.leftBar ul li a {
+	display: inline-block;
+	width: 100%;
+	line-height: 38px;
+	text-decoration: none;
+}
+.leftBar ul li:hover {
+	background-color: #fff;
+}
+.leftBar ul li:hover a,.leftBar ul li:hover .fa {	
+	color: #2b7dbc;
+}
+.leftBar ul li:hover:before {
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 3px;
+	height: 39px;
+	background-color: #428bca;
+}
+
+/*---------------------main主体部分样式---------------------*/
+.main {
+	margin: 45px 0 0 200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: calc(100% - 200px);
+	min-width: 1149px;
+	height: auto;
+}
+.main .url {
+	position: fixed;
+	z-index: 998;
+	padding-left: 20px;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 13px;
+	color: #A0A0A0; 
+	background-color: #F5F5F5;
+	/*border-left: 1px solid #FFF;*/
+	border-bottom: 2px solid #79B0CE;
+}
+/*通过伪类实现border-left*/
+.main .url:before {  
+	position: absolute;
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 38px;
+	left: 0px;
+	background-color: #FFF;
+}
+.main .container {
+	width: 100%;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 60px 21px 20px;
+}
+/*页脚*/
+footer {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 21px;
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+	color: #999;
+	text-align: center;
+	border-top: 3px double #ccc;
+	/*background-color: #EEEEEE;*/
+}

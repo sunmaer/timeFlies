@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/*
+* @Author: 孙梦海
+* @Date:   2016-11-01 20:56:18
+* @Last Modified by:   SMH
+* @Last Modified time: 2016-11-02 19:01:27
+*/
+
+/*---------------------main主体部分样式---------------------*/
+.main .container .alert {
+	position: relative;
+	width: 100%;
+	padding: 10px 40px 10px 15px;
+	margin-bottom: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #31708f;
+	font-size: 13px;
+	background-color: #d9edf7;
+	border: 1px solid #bce8f1;
+	display: none;
+}
+.fa-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 13px 0;
+	width: 40px;
+	height: 40px;
+	color: #31708f;
+	text-align: center;
+}
+.fa-close:hover {
+	cursor: pointer;
+}
+.main .container .alert strong,.main .container .alert a {
+	font-weight: bold;
+	color: #31708f;
+}
+/*学生统计信息*/
+.table {
+	margin-bottom: 20px;
+}
+.studentInfo {
+	float: left;
+}
+.table .title {
+	border-bottom: 1px solid #D7D7D7;
+	color: #666666;
+	font-size: 16px;
+	font-weight: 400;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+.table table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #F9F9F9;
+	font-size: 13px;
+}
+.table table tr td {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 15px;
+	width: calc(1106px/6);
+	height: 35px;
+	border: 1px solid #CCCCCC;
+}
+.table table tr td:nth-child(odd) {
+	padding-right: 10px;
+	text-align: right;
+}
+/*服务器信息*/
+.serverInfo {
+	clear: both;
+}
+/*系统信息*/
+.systemInfo {
+	margin-bottom: 0;
+}
+.cnblog {
+	color: #0072C6;
+	text-decoration: none;
+	outline: none;
+}
+.fa-qq {
+	color: #3b83c0;
+}
+.fa-weixin {
+	color: #51c332;
+}
+
+/*---------------------学生列表样式---------------------*/
+.name {
+	margin-bottom: 20px;
+	margin-top: -10px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #D7D7D7;
+}
+.name span {
+	font-size: 23px;
+}
+.name a {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	float: right;
+	margin: 15px 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	color: #FFFFFF;
+	font-size: 13px;
+	text-decoration: none;
+	background-color: #28B779;
+}
+.name .fa {
+	color: #fff;
+}
+/*搜索*/
+.search {
+	margin-bottom: 20px;
+}
+.search select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 5px;
+	height: 30px;
+	width: 100px;
+	color: #000;
+	font-size: 13px;
+	border: 1px solid #DBDBDB;
+	background-color: #FFF;
+}
+.search input[type="text"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+	background-color: #FFF;
+	padding: 6px 8px;
+	color: #999;
+	font-size: 13px;
+	height: 30px;
+}
+.search input[type="text"]:focus {
+	border-color: #f59942;
+}
+.search input[type="submit"] {
+	padding: 0 10px;
+	height: 29px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background-color: #0072C6;
+}
+/*学生信息表格*/
+.list table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #F9F9F9;
+	font-size: 13px;
+}
+.list table tr th {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 35px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	background-color: #EEEEEE;
+}
+.list .checkbox {
+	width: 40px;
+}
+.list .action {
+	width: 130px;
+}
+.list table tr td {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 35px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+}
+.list table tr:hover {
+	background-color: #eeeeee;
+}
+.list table tr td a {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+.list table tr td a:nth-child(1) {
+	border-right: 1px solid #ccc;
+}
+.list table tr td a:nth-child(2) {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #ccc;
+}
+.list table tr td a:nth-child(3) {
+	border-left: 1px solid #FFF;
+}
+.list .fa-file-text-o {
+	color: #0072C6;
+}
+.list .fa-file-text-o:hover {
+	font-size: 20px;
+}
+.list .fa-edit {
+	color: #69AA46;
+}
+.list .fa-edit:hover {
+	font-size: 20px;
+}
+.list .fa-trash-o {
+	color: #DD5A43;
+}
+.list .fa-trash-o:hover {
+	font-size: 20px;
+}
+
+.list button {
+	position: absolute;
+	margin: 10px 10px;
+	padding: 0 10px;
+	height: 30px;
+	color: #fff;
+	border: none;
+	border-radius: 3px; 
+	font-size: 13px;
+	cursor: pointer;
+	background-color: #0072C6;
+}
+.list .fa-trash {
+	color: #fff;
+} 
+/*分页*/
+.page {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	text-align: center;
+	font-size: 13px;
+	background-color: #EEEEEE;
+}
+
+/*---------------------添加学生样式---------------------*/
+.addSud table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #F9F9F9;
+	font-size: 13px;
+}
+.addSud table tr td {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 16.66%;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+}
+.addSud table tr td input[type="text"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+	background-color: #FFF;
+	padding: 6px 8px;
+	width: 85%;
+	margin: 0 7.5%;
+	color: #999;
+	height: 30px;
+}
+.addSud table tr td input[type="text"]:focus {
+	border-color: #f59942;
+}
+.addSud table tr td input[type="submit"] {
+	padding: 0 15px;
+	height: 30px;
+	color: #fff;
+	border: none;
+	border-radius: 3px; 
+	font-size: 13px;
+	cursor: pointer;
+	background-color: #0072C6;
+}
+.addSud .textRight {
+	padding-right: 20px;
+	text-align: right;
+}
+
+/*---------------------学生成绩样式---------------------*/
+.grade .action {
+	width: 80px;
+}
+.grade table tr td a:nth-child(1) {
+	border-left: none;
+	border-right: none;
+}
+
+/*---------------------管理员样式---------------------*/
+.admin table tr td {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: auto;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+}
+.admin table tr td input[type="text"],.admin table tr td input[type="password"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+	background-color: #FFF;
+	padding: 6px 8px;
+	width: 40%;
+	margin: 0;
+	color: #999;
+	font-size: 13px;
+	height: 30px;
+}
+.admin table tr td input[type="text"]:focus,.admin table tr td input[type="password"]:focus {
+	border-color: #f59942;
+}
+.admin .textRight {
+	width: 200px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+/*---------------------数据备份样式---------------------*/
+#tr1:hover,#tr2:hover,#tr3:hover {
+	background-color: #F9F9F9;
+}
+#tr1 td{
+	padding-right: 20px;
+	text-align: right;
+}
+#tr3 {
+	height: 50px;
+}
+#tr3 input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+	background-color: #FFF;
+	padding: 6px 8px;
+	width: 200px;
+	margin: 0;
+	color: #999;
+	font-size: 13px;
+	height: 30px;
+}
+#tr3 input:focus {
+	border-color: #f59942;
+}
+#tr3 input:last-child {
+	width: 60px;
+}
+.page-backup {
+	background-color: #F9F9F9;
+}

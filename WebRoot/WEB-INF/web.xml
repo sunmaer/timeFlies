@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cms</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>home.do</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>character</filter-name>
+    <filter-class>org.cms.filter.characterMyFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>character</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> 
+  <filter>
+    <filter-name>login</filter-name>
+    <filter-class>org.cms.filter.loginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>login</filter-name>
+    <url-pattern>/Admin/*</url-pattern>
+  </filter-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>login</servlet-name>
+    <servlet-class>org.cms.login.login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addStudents</servlet-name>
+    <servlet-class>org.cms.students.addStudents</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addStudents</servlet-name>
+    <url-pattern>/addStudents.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>studentsList</servlet-name>
+    <servlet-class>org.cms.students.studentsList</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>studentsList</servlet-name>
+    <url-pattern>/studentsList.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>studentsGrade</servlet-name>
+    <servlet-class>org.cms.students.studentsGrade</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>studentsGrade</servlet-name>
+    <url-pattern>/studentsGrade.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateStudents</servlet-name>
+    <servlet-class>org.cms.students.seeInfo</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updateStudents</servlet-name>
+    <url-pattern>/seeInfo.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>seeGrade</servlet-name>
+    <servlet-class>org.cms.students.seeGrade</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>seeGrade</servlet-name>
+    <url-pattern>/seeGrade.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateInfo</servlet-name>
+    <servlet-class>org.cms.students.updateInfo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>updateInfo</servlet-name>
+    <url-pattern>/updateInfo.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteStudents</servlet-name>
+    <servlet-class>org.cms.students.deleteStudents</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>deleteStudents</servlet-name>
+    <url-pattern>/deleteStudents.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateGrade</servlet-name>
+    <servlet-class>org.cms.students.updateGrade</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updateGrade</servlet-name>
+    <url-pattern>/updateGrade.do</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showGrade</servlet-name>
+    <servlet-class>org.cms.students.showGrade</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>showGrade</servlet-name>
+    <url-pattern>/showGrade.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showAdmin</servlet-name>
+    <servlet-class>org.cms.administor.showAdmin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>showAdmin</servlet-name>
+    <url-pattern>/showAdmin.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateAdmin</servlet-name>
+    <servlet-class>org.cms.administor.updateAdmin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>updateAdmin</servlet-name>
+    <url-pattern>/updateAdmin.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>index</servlet-name>
+    <servlet-class>org.cms.login.index</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index.do</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>loginOut</servlet-name>
+    <servlet-class>org.cms.login.loginOut</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginOut</servlet-name>
+    <url-pattern>/loginOut.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteAll</servlet-name>
+    <servlet-class>org.cms.students.deleteAll</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>deleteAll</servlet-name>
+    <url-pattern>/deleteAll.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>studentsSearch</servlet-name>
+    <servlet-class>org.cms.students.studentsSearch</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>studentsSearch</servlet-name>
+    <url-pattern>/studentsSearch.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>gradeSearch</servlet-name>
+    <servlet-class>org.cms.students.gradeSearch</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>gradeSearch</servlet-name>
+    <url-pattern>/gradeSearch.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>home</servlet-name>
+    <servlet-class>org.home.index.home</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>沸点</servlet-name>
+    <servlet-class>org.cms.login.沸点</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/home.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>沸点</servlet-name>
+    <url-pattern>/servlet/沸点</url-pattern>
+  </servlet-mapping>
+</web-app>

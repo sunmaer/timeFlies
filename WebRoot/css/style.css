@@ -1,0 +1,542 @@
+@charset "UTF-8";
+/*
+* @Author: 孙梦海
+* @Date:   2016-11-01 20:56:18
+* @Last Modified by:   SMH
+* @Last Modified time: 2016-11-02 19:01:27
+*/
+body {
+	min-width: 1349px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    color: #fff;
+}
+/*----------------------------首页--------------------------*/
+.container-fluid video {
+	min-width: 1349px;
+	position: absolute;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: rgba(0, 0, 0, 0) url("../img/replace.jpg") no-repeat scroll center center / cover ;
+}
+.mask {
+	position: absolute;
+	min-width: 1349px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+}
+.mynavbar {
+	position: fixed;
+	z-index: 999;
+	padding-top: 30px;
+	width: 100%;
+	height: 80px;
+	transition: all ease .5s;
+}
+.mynavbar1 {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 50px;
+	padding-top: 0px;
+	background: #000;
+	box-shadow: 0px 3px 8px rgba(0,0,0,.5);
+	transition: all ease .5s;
+}
+#mynavbar hr {
+	position: absolute;
+	margin: 0 auto;
+	display: inline-block;
+	top: 47.5px;
+	left: calc((100% - 34px)/2);
+	width: 34px;
+	height: 1px;
+	background-color: #fff;
+}
+#mynavbar ul{
+	list-style: none;
+	padding: 0;
+	width: 100%; 
+}
+#mynavbar ul {
+	margin: 0 20%;
+}
+#mynavbar ul li {
+	position: relative;
+	float: left;
+	line-height: 50px;
+	width: 10%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: transparent;
+}
+#mynavbar ul li a {
+	position: relative;
+	outline: none;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	
+}
+/* #mynavbar ul li a:after {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 2px;
+	top: 32px;
+	left: 0;
+	background-color: #ffffff;
+	transition: 1s;
+	-moz-transition: 1s;	Firefox 4
+	-webkit-transition: 1s;	Safari 和 Chrome
+	-o-transition: 1s;
+}
+#mynavbar ul li a:hover:after {
+	width: 66px;
+	transition: 1s;
+	-moz-transition: 1s;	Firefox 4
+	-webkit-transition: 1s;	Safari 和 Chrome
+	-o-transition: 1s; 
+}
+
+#mynavbar ul li:nth-child(1) a:hover:after {
+	width: 34px;
+}
+#mynavbar ul li:nth-child(2) a:hover:after {
+	width: 50px;
+} */
+.banner {
+	position: absolute;
+	min-width: 1349px;
+	width: 100%;
+	bottom: 80px;
+	clear: both;
+	margin: 0;
+	/*background-color: red;*/
+}
+.banner p {
+	text-align: center;
+	line-height: 60px;
+	font-size: 32px;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+.banner a {
+	display: block;
+	width: 120px;
+	margin: 100px auto 0;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 20px;
+	background-color: transparent;
+	outline: none;
+}
+
+/*----------------------------关于我--------------------------*/
+.wrapper {
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 1000px;
+	padding: 50px 20px;
+	color: #000;
+}
+.bg-about {
+	background-color: #f1f1f1;
+}
+.photo {
+	position: relative;
+	overflow: hidden;
+}
+.photo img {
+	margin-top: 30px;
+	float: left;
+	width: 170px;
+	height: 170px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+.info {
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 80px 20px 0 20px;
+	width: calc(100% - 200px);
+}
+.photo h2 {
+	color: #000;
+}
+.photo hr {
+	width: 100%;
+	height: 2px;
+	background-color: #ddd;
+}
+#about .content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: 230px;
+}
+.title {
+	margin-bottom: 30px;
+	height: 35px;
+	line-height: 35px;
+}
+.title:before {
+	position: absolute;
+	content: " ";
+	display: inline-block;
+	width: 3px;
+	height: 35px;
+	background-color: #64b5ed;
+}
+#about .content ul {
+	overflow: hidden;
+	color: #00b33b;
+	font-size: 16px;
+	list-style-type: none;
+}
+#about .content ul li {
+	float: left;
+	width: calc(100% / 2);
+	height: 50px;
+}
+#about .content ul li p {
+	position: relative;
+	display: inline-block;
+	padding: 0 2px 10px;
+	border-bottom: 1px solid #ddd;
+}
+#about .content ul li p .item {
+	display: inline-block;
+	margin-right: 20px;
+	width: 100px;
+}
+#about .content ul li p .line {
+	position: absolute;
+	left: 80px;
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	background-color: #ddd;
+}
+/*----------------------------专业技能--------------------------*/
+.bg-skills {
+	background-color: #fff;
+}
+#skills q {
+	display: block;
+	width: 70%;
+	margin: 0 auto 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: #5bc0de;
+}
+#skills .item {
+	margin-bottom: 20px;
+	padding: 0 50px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+#skills .item .type {
+	display: inline-block;
+	float: left;
+	width: 150px;
+	font-size: 18px;
+}
+#skills .progress {
+	position: relative;
+	top: 5px;
+}
+/*----------------------------社会经历--------------------------*/
+.bg-experience {
+	background-color: #FAF6EB;
+}
+#experience q {
+	display: block;
+	width: 70%;
+	margin: 0 auto 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	color: #00b33b;
+}
+.bg-experience .content {
+	position: relative;
+	width: 100%;
+}
+.bg-experience .vertical-line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: #d7e4ed;
+	width: 3px;
+	height: 930px;
+}
+.bg-experience .content ul {
+	padding: 70px;
+	padding-bottom: 0;
+}
+.bg-experience .content ul li {
+	position: relative;
+	height: 100px;
+	margin-bottom: 150px;
+	list-style-type: none;
+}
+.bg-experience .content ul li:last-child {
+	margin-bottom: 100px;
+}
+.bg-experience .content ul li p {
+	line-height: 30px;
+}
+.left-content {
+	width: 40%;
+	float: left;
+}
+.left-content .business-name {
+	font-size: 18px;
+	text-align: center;
+}
+.left-content .business-content {
+	text-indent: 30px;
+	letter-spacing: 1px;
+}
+.left-content  .business-time {
+	text-align: right;
+	font-family: 'Cuprum Regular';
+	font-size: 20px;
+	color: #696969;
+	word-spacing: 0.01em;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+.right-content {
+	width: 40%;
+	float: right;
+}
+.right-content .business-name {
+	font-size: 18px;
+	text-align: center;
+}
+.right-content .business-content {
+	text-indent: 30px;
+	letter-spacing: 1px;
+}
+.right-content  .business-time {
+	font-family: 'Cuprum Regular';
+	font-size: 20px;
+	color: #696969;
+	word-spacing: 0.01em;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+.simboo {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	margin: 0 25px;
+	top: -15px;
+	left: 50%;
+	margin-left: -30px;
+	box-sizing: border-box;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	background: #fff;
+	box-shadow: 1px 0px 6px 1px rgba(0,0,0,.1);
+}
+.simboo i {
+	line-height: 52px;
+	width: 52px;
+	height: 52px;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 25px;
+	background: #F04439;
+}
+
+/*----------------------------求职意向--------------------------*/
+.classify {
+	overflow: hidden;
+	width: 224px;
+	height: 300px;
+	margin: 0 auto;
+}
+.classify-web {
+	color: #cc0033;
+	background-image: url("../img/Web.png");
+}
+.classify-java {
+	color: #006699;
+	background-image: url("../img/Java.png");
+}
+.classify-android {
+	color: #006633;
+	background-image: url("../img/Android.png");
+}
+.classify .classify-title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 55px;
+}
+#dream q {
+	display: block;
+	width: 70%;
+	margin: 50px auto;
+	line-height: 40px;
+	font-size: 25px;
+	text-align: center;
+	color: #000;
+}
+.classify p {
+    margin-left: 20px;
+    margin-top: 24px;
+}
+.classify .classify-item {
+	margin-left: 30px;
+	margin-top: 0px;
+	line-height: 20px;
+}
+.row-company {
+	margin: 50px 0 0;
+}
+.row-company img {
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+.row-company p {
+	height: 50px;
+	line-height: 50px;
+	color: #333;
+	text-align: center;
+}
+
+/*<----------------成员介绍模块------------>*/
+#member {
+	padding: 60px 0 0;
+	background-color: #FAF6EB;
+}
+#member .title {
+	margin-left: calc((100% - 1251px)/2);
+	color: black;
+}
+.member{
+	width: 1349px;
+	margin: 0 auto;
+	/*padding-left: 20px;*/
+	
+	background-color: #f5f5f5;
+	background-image: url(../image/banner1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: opacity .15s;
+	-moz-transition: opacity .15s;
+	-webkit-transition: opacity .15s;
+	-o-transition: opacity .15s;
+}
+table{
+	border-collapse:collapse;
+	margin: 0 auto;
+}
+.member table tr td{
+	width: 139px;
+	height: 149px;
+    
+	/*border: 1px solid purple;*/
+}
+.member table tr td{
+	width: 139px;
+	height: 149px;
+    
+	/*border: 1px solid purple;*/
+}
+.member table tr td a {
+	outline: none;
+}
+.member img{
+	width: 135px;
+	height: 145px;
+	cursor: pointer;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.member img:hover{
+	 opacity: 100;
+	/*filter: alpha(opacity=70);*/
+}
+
+/*----------------------------页脚--------------------------*/
+footer {
+	margin: 30px calc((100% - 1251px)/2) 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 4px double #b4bbbf;
+}
+footer p {
+	margin: 0;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	color: #b4bbbf;
+}
+
+/*回到顶部*/
+.button {
+	display: none;
+	position: fixed;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	bottom: -40px;                                                                                                                                                                                                                                                                                                                                                                                                        0px;
+	right: 20px;
+	cursor: pointer;
+	transition: all ease .3s;
+	-webkit-transition: all ease .3s;
+	-ms-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	background-color: #000;
+	text-align: center;
+}
+.fa-chevron-up {
+	margin-top: 12px;
+}
+
+/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+    
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+    
+}
